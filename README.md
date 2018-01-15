@@ -2,7 +2,7 @@
 Work Shop training with socket.io
 
 ## Run
-''' bash
-server at localhost:80
-# node app.js
-'''
+``` bash
+# server at localhost:80
+node app.js
+```
