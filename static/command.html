@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-  <title>MFU@ IT School Smart Dispay</title>
+  <title>Remote command</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1">
   <link rel="stylesheet" href="lib/bootstrap.min.css">
   <link rel="stylesheet" href="css/app.css">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   <script src="lib/jquery.min.js"></script>
   <script src="lib/bootstrap.min.js"></script>
@@ -15,26 +17,85 @@
 
   <script>
       $(function () {
-          $("#say").click(function () {
-              var data = $('#inp').val()
-              console.log(data)
-              socket.emit("say", {msg: data}) 
-          })
-
-          $("#change").click(function () {
-              var data = $('#inp').val()
+          $("img").click(function () {
+              var data = $(this).attr("alt");
               console.log(data)
               socket.emit("changeVDO", {msg: data}) 
           })
-          alert("Hello JQuery")
       })
   </script>
 </head>
 
 <body>
-    <input type="text" name="" id="inp" placeholder="Input text here" />
-    <button id="say">say hi</button>
-    <button id="change">Change VDO</button>
+    <header class="container-fluid">
+        <h2>Remote command</h2>
+    </header>
+    <hr class="mt-0">
+
+    <!-- <button value="XZBlAEJyKGw">เที่ยวอยู่ได้ l SS1 - Ep.1 London (Part.1)</button>
+    <button value="9rSqel-hvm0">เที่ยวอยู่ได้ l SS1 - Ep.1 London (Part.2)</button>
+    <button value="3SDz2fLbCWI">เที่ยวอยู่ได้ l SS1 - Ep.2 สวนผึ้ง</button>
+    <button value="VCjDVlrfXAc">เที่ยวอยู่ได้ l SS1 - Ep.3 Newcastle - Chelsea - Brick Lane (Part.1)</button>
+    <button value="rfQLkkphywM">เที่ยวอยู่ได้ l SS1 - Ep.4 London (Last day)</button>
+    <button value="OOrjeWSSgSM">เที่ยวอยู่ได้ l SS1 - Ep.5 Scotland</button>
+    <button value="QcmXpaRRZk8">เที่ยวอยู่ได้ l SS1 - Ep.6 บางกระเจ้า</button>
+    <button value="nmxv1oOajQ8">เที่ยวอยู่ได้ l SS1 - Ep.7 ภูเก็ต</button> -->
+
+    <div class="container">
+        <div class="w3-row-padding">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Ep.1 London (Part.1)</div>
+                    <img src="https://img.youtube.com/vi/XZBlAEJyKGw/mqdefault.jpg" alt="XZBlAEJyKGw" style="width:99%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Ep.1 London (Part.2)</div>
+                    <img src="https://img.youtube.com/vi/9rSqel-hvm0/mqdefault.jpg" alt="9rSqel-hvm0" style="width:99%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Ep.2 สวนผึ้ง</div>
+                    <img src="https://img.youtube.com/vi/3SDz2fLbCWI/mqdefault.jpg" alt="3SDz2fLbCWI" style="width:99%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Ep.3 Newcastle - Chelsea - Brick Lane</div>
+                    <img src="https://img.youtube.com/vi/VCjDVlrfXAc/mqdefault.jpg" alt="VCjDVlrfXAc" style="width:99%">
+                </div>
+            </div>
+        </div>
+        <div class="w3-row-padding">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Ep.4 London (Last day)</div>
+                    <img src="https://img.youtube.com/vi/rfQLkkphywM/mqdefault.jpg" alt="rfQLkkphywM" style="width:99%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Ep.5 Scotland</div>
+                    <img src="https://img.youtube.com/vi/OOrjeWSSgSM/mqdefault.jpg" alt="OOrjeWSSgSM" style="width:99%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Ep.6 บางกระเจ้า</div>
+                    <img src="https://img.youtube.com/vi/QcmXpaRRZk8/mqdefault.jpg" alt="QcmXpaRRZk8" style="width:99%">
+                </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                    <div class="w3-display-topleft w3-black w3-padding">Ep.7 ภูเก็ต</div>
+                    <img src="https://img.youtube.com/vi/nmxv1oOajQ8/mqdefault.jpg" alt="nmxv1oOajQ8" style="width:99%">
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </body>
 
 </html>

@@ -16,9 +16,9 @@ app.get('/test', function (req, res) {
 io.sockets.on('connection', function (sk) {
   //console.log(sk)
 
-  sk.emit('broadcast', { msg: 'hello!' });
+  sk.emit('broadcast', { msg: 'Socket.io Training' });
   
-  sk.on('say', function (data) {
+  sk.on('broadcast', function (data) {
     console.log(data.msg)
   })
 

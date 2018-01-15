@@ -20,21 +20,24 @@
         var url = "https://www.youtube.com/embed/"
         url += id + "?autoplay=1&loop=1"
         console.log(url)
-        $("#youplay").attr("src", url)
+        $("#vdo").attr("src", url)
       })
     })
   </script>
 </head>
 
 <body>
-  <div id="screen_panel">
-    asdasdasd
-    <div id="vdo_panel">
+  <header class="container-fluid">
+    <h2>Socket.io Training</h2>
+  </header>
+  <hr class="mt-0">
+
+  <section class="container ">
+    <div class="embed-responsive embed-responsive-16by9">
       <!-- panel for vdo iframe-->
-      <iframe id="youplay" src="https://www.youtube.com/embed?listType=playlist&list=PLBKXhybA55bOQGF2q9wN7FiwRHdW19Itf&autoplay=1&loop=1">
-      </iframe>
+      <iframe class="embed-responsive-item" id="vdo" src="https://www.youtube.com/embed/XZBlAEJyKGw?autoplay=1&loop=1" allowfullscreen></iframe>
     </div>
-  </div>
+  </section>
 
 </body>
 
