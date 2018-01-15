@@ -8,7 +8,7 @@ var ip = require("ip")
 // var clients = [];
 // var clientid =0;
 
-app.use(express.static('static'))
+app.use(express.static('src'))
 app.get('/test', function (req, res) {
   res.send('Hello World!')
 })
