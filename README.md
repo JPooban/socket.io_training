@@ -1,8 +1,11 @@
 # socket.io_training
-Work Shop training with socket.io
+This project is a work shop training with [Socket.io](https://github.com/socketio/socket.io) for use in smart screen.
 
-## Run
+## Build Setup
 ``` bash
+# install dependencies
+npm install
+
 # server at localhost:80
 node app.js
 ```
